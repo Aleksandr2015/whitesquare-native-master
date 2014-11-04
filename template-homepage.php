@@ -1,3 +1,9 @@
+<?php
+/**
+ * Template Name: Шаблон главной страницы
+ **/
+?>
+
 <?php get_header(); ?>
 	<div id="wrapper">
 		<header>
@@ -12,13 +18,9 @@
 		<div id="heading">
 			<h1><?php the_title(); ?></h1>
 		</div>
-				
-		<aside>		
-    		<?php get_sidebar(); ?>		
-		</aside>
-       
+		       
         <section>
-			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); the_content(); endwhile; endif; ?>
-        </section>
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); the_content(); endwhile; endif; ?>			
+		</section>
 	</div>
 	<?php get_footer(); ?>

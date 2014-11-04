@@ -19,9 +19,7 @@
        
         <section>
        
-            <?php $posts = get_posts ("category=1&orderby=date"); ?> 
-            <?php if ($posts) : ?>
-            <?php foreach ($posts as $post) : setup_postdata ($post); ?>
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
                 <div class="block">
                     <div class="name"> 
@@ -31,9 +29,11 @@
                     </div>
                 </div>
                 <div style="height:20px;"></div>
+                <hr>
 
-            <?php endforeach; ?>
-            <?php endif; ?>
+            <?php endwhile; ?>					
+				<?php wp_pagenavi(); ?>		
+			<?php endif; ?>
              
         </section>
 	</div>

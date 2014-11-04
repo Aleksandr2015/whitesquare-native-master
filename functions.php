@@ -16,6 +16,20 @@ function special_nav_class($classes, $item){
      return $classes;
 }
 
+//Регистрация виджета и области для него
+function sidebar_left_function() {
+
+	register_sidebar( array(
+		'name' => 'Сайдбар слева',
+		'id' => 'sidebar-left',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '<h2>',
+		'after_title' => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'sidebar_left_function' );
+
 
 
 

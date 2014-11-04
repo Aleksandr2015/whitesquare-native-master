@@ -16,7 +16,7 @@
 		<?php include (TEMPLATEPATH . '/nav.php'); ?>
 
 		<div id="heading">
-			<h1><?php the_title(); ?></h1>
+			<h1><?php the_title(); ?> - template-homepage.php</h1>
 		</div>
 		       
         <section>

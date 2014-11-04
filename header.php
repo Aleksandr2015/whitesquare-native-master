@@ -1,7 +1,7 @@
 <!doctype html>
-<html>
+<html <?php language_attributes(); ?>>
 <head>
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<title>Whitesquare</title>
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/styles.css" type="text/css">

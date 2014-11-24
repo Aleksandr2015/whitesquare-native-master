@@ -2,6 +2,10 @@
             
             <?php dynamic_sidebar( 'sidebar-left' ); ?>
             
+            <?php dynamic_sidebar( 'sidebar-left-1' ); ?>
+            
+            
+            
 <!--
 			<h2>OUR OFFICES</h2>
 			<p>

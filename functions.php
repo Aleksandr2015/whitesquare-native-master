@@ -30,7 +30,18 @@ function sidebar_left_function() {
 }
 add_action( 'widgets_init', 'sidebar_left_function' );
 
+function sidebar_left_1_function() {
 
+	register_sidebar( array(
+		'name' => 'Сайдбар слева 1',
+		'id' => 'sidebar-left-1',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '<h2>',
+		'after_title' => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'sidebar_left_1_function' );
 
 
 ?>

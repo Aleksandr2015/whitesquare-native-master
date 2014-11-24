@@ -24,12 +24,25 @@
                 <div class="block">
                     <div class="name"> 
                         <a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
-                        <p><?php the_content(); ?></p>                         
+                        <?php the_content(); ?>                         
+                        Район: <h2><?php the_field('region'); ?></h2>                        
+                        Этаж: <h2><?php the_field('floor'); ?></h2>
                     </div>
+                                <?php 
+
+                                $image = get_field('ph1');
+
+                                if( !empty($image) ): ?>
+
+                                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+                                <?php endif; ?>
                 </div>
                 <div style="height:20px;"></div>
 
             <?php endwhile; endif; ?>                      
+            
+
             
         </section>
 	</div>
